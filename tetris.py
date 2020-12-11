@@ -86,7 +86,7 @@ class Tetris():
                     if array[i][j] == 1:
                         array[i] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.iScreen = Matrix(array)
-        self.oScreen = Matrix(iScreen)
+        self.oScreen = Matrix(self.iScreen)
 
     def accept(self, key):# To be implemented!!i
         if self.justStarted == True:
